@@ -49,6 +49,9 @@ body{
     position: relative;
     top: 0px;
 }
+.header_cart_togge{
+	background: #eee;
+}
 .personal-profile{
 	color: #eee;
 }

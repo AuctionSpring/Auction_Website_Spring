@@ -52,36 +52,38 @@
 						<div class="infor-box">
 							<div class="infor_box_inner">
 								<div class="row">
-								<div class="col-sm-4">
-									<div class="infor_box_left">
-									<div class="row">
-										<div class="col-xs-12">
-											<h4 class="infor_box_heading">ĐỔI TRẢ HÀNG</h4>
-										</div>
-									</div>
-									<h6 class="infor_text">2 ngày sau khi giao hàng nếu không đúng với mẫu mã cam kết</h6>
-									</div>
-								</div>
 									<div class="col-sm-4">
-									<div class="infor_box_left">
-									<div class="row">
-										<div class="col-xs-12">
-											<h4 class="infor_box_heading">MIỄN PHÍ GIAO HÀNG</h4>
+										<div class="infor_box_left">
+											<div class="row">
+												<div class="col-xs-12">
+													<h4 class="infor_box_heading">ĐỔI TRẢ HÀNG</h4>
+												</div>
+											</div>
+											<h6 class="infor_text">2 ngày sau khi giao hàng nếu
+												không đúng với mẫu mã cam kết</h6>
 										</div>
 									</div>
-									<h6 class="infor_text">Miễn phí giao hàng với những hóa đơn dưới 100k</h6>
-									</div>
-								</div>
 									<div class="col-sm-4">
-									<div class="infor_box_left">
-									<div class="row">
-										<div class="col-xs-12">
-											<h4 class="infor_box_heading">HÌNH THỨC ĐẤU GIÁ</h4>
+										<div class="infor_box_left">
+											<div class="row">
+												<div class="col-xs-12">
+													<h4 class="infor_box_heading">MIỄN PHÍ GIAO HÀNG</h4>
+												</div>
+											</div>
+											<h6 class="infor_text">Miễn phí giao hàng với những hóa
+												đơn dưới 100k</h6>
 										</div>
 									</div>
-									<h6 class="infor_text">Thủ tục đấu giá rất đơn giản</h6>
+									<div class="col-sm-4">
+										<div class="infor_box_left">
+											<div class="row">
+												<div class="col-xs-12">
+													<h4 class="infor_box_heading">HÌNH THỨC ĐẤU GIÁ</h4>
+												</div>
+											</div>
+											<h6 class="infor_text">Thủ tục đấu giá rất đơn giản</h6>
+										</div>
 									</div>
-								</div>
 								</div>
 							</div>
 						</div>

@@ -109,8 +109,8 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-12">
-						<div class="product-informore">
+					<div class="col-sm-12" id="infor-scroll">
+						<div class="product-informore" id="infor-scroll-item">
 							<ul class="nav nav-tabs more-infor">
 								<li class="active">
 								<a href="#detail">Chi tiết sản phẩm</a>
