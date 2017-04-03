@@ -1,0 +1,18 @@
+/**
+ * 
+ */
+$(document).ready(function(){
+	$("#saveRegister").validate({
+		rules:{
+			"username":{
+				require:true,
+				minlength:6
+			}
+		},
+		messages:{
+			"username":{
+				required:"Tên đăng nhập không được để trống"
+			}
+		}
+	})
+})

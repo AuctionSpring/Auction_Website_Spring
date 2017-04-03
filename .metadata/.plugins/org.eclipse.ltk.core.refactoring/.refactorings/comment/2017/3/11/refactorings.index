@@ -3,3 +3,13 @@
 1489287087040	Rename package 'vn.smartdev.product.dao.model'
 1489287097027	Rename package 'vn.smartdev.product.dao.service'
 1489287399414	Delete element
+1489291718557	Rename type 'Comment'
+1489296190483	Copy package
+1489296193583	Copy package
+1489296195221	Copy package
+1489296206489	Rename package 'vn.smartdev.comment.dao.repository.copy'
+1489296218269	Rename package 'vn.smartdev.comment.dao.repository.copy2'
+1489296223310	Rename package 'vn.smartdev.comment.dao.repository.copy3'
+1489296230947	Copy package
+1489296238465	Copy package
+1489297028529	Rename type 'ModelEntity'

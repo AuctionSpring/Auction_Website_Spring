@@ -11,7 +11,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="payment")
+@Table(name="invoice_detail")
 public class PayMent {
 	@Id
 	@GeneratedValue

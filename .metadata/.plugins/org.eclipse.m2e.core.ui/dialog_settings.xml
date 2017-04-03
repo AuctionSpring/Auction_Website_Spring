@@ -2,10 +2,13 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.java.training"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="comment"/>
+			<item value="java-training"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -58,6 +61,23 @@
 			<item value="[name]"/>
 		</list>
 	</section>
+	<section name="MavenModuleWizardParentPage">
+		<list key="moduleName">
+			<item value="comment"/>
+			<item value="discount"/>
+			<item value="rating"/>
+			<item value="banner"/>
+			<item value="Cart"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
 	<section name="MavenDependenciesWizardPage">
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -82,13 +102,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="Jreedom.ShoppingWeb"/>
+			<item value="org.comment"/>
 		</list>
 		<list key="groupId">
-			<item value="Jreedom"/>
+			<item value="com.java.training"/>
 		</list>
 		<list key="artifactId">
-			<item value="ShoppingWeb"/>
+			<item value="comment"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

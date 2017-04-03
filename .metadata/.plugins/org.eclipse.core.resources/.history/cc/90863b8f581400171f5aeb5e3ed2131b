@@ -1,0 +1,18 @@
+ <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+ <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!--  CONTENT -->
+	<div class="form-register">
+		<div class="register-avatar">
+			<img src="resource/images/avatar/icon-lg-register-blue1.png">
+		</div>
+		<section class="form_register">
+			<form:form action="">
+				<div class="form_input_register">
+					<form:input type="text" placeholder="Tên đăng nhập" id="username" path=""></form:input>
+				</div>
+			</form:form>
+		</section>
+	</div>
+<!-- END CONTENT -->

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;IehB7.png&apos; to &apos;backgroundmenu&apos;" description="Move &apos;IehB7.png&apos; to &apos;backgroundmenu&apos;" destination="src/main/webapp/resource/images/backgroundmenu" element1="src/main/webapp/resource/images/IehB7.png" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1490756533061" updateReferences="true"/>
+</session>

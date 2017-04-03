@@ -21,5 +21,15 @@ public class CategoryImp implements CategoryService{
 		// TODO Auto-generated method stub
 		return categoryrepo.findOne(idcategory);
 	}
-
+//	@Override
+//	public List<Category> getCategoryParent(int parentid) {
+//		// TODO Auto-generated method stub
+//		return categoryrepo.findByCategory(parentid);
+//	}
+	@Override
+	public List<Category> getCategoryParent() {
+		// TODO Auto-generated method stub
+		return categoryrepo.findByCategory();
+	}
+	
 }

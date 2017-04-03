@@ -1,0 +1,13 @@
+/**
+ * 
+ */
+$(document).ready(function(){
+	$("#saveRegister").validate({
+		rules:{
+			"username":{
+				require:true,
+				minlength:6
+			}
+		}
+	})
+})

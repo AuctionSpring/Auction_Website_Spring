@@ -23,6 +23,7 @@ public class User {
 	private String username;
 	private String password;
 	private String passwordConfirm;
+	private String email;
 	private Set<Role> roles;
 	private Set<Comment> comments;
 	private Set<PayMent> payments;
@@ -35,6 +36,13 @@ public class User {
 	}
 	public void setId(int id) {
 		this.id = id;
+	}
+	
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
 	}
 	public String getUsername() {
 		return username;
