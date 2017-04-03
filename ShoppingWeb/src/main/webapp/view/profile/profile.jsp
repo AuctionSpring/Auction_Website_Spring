@@ -5,7 +5,7 @@
     <div class="content-page">
         <div class="container">
             <div class="row">
-                <div class="content-page">
+                <div class="content-page-profile">
                     <div class="row">
                 		<aside class="col-sm-3">
                 			<div class="profile-avarta">

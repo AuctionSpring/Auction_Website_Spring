@@ -46,5 +46,22 @@ $(document).ready(function(){
         	}  
    		 });    
     });  
+$(document).ready(function(){
+	$("#review_item_toggle").click(function(){
+		$("#review_item_show").stop(true,false,true).slideToggle();
+	})
+})
+$(document).ready(function(){
+	 $('a[href*=#]:not([href=#])').click(function() {
+	        var target = $(this.hash);
+	        target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
+	        if (target.length) {
+	            $('html,body').animate({
+	              scrollTop: target.offset().top
+	            }, 1000);
+	            return false;
+	        }
+	    });
+})
 
 
