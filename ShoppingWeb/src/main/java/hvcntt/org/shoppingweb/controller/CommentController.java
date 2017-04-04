@@ -40,7 +40,7 @@ public class CommentController {
 //		return "detailpage";
 //	}
 	@RequestMapping(value="/comment/{idproduct}",produces={"application/x-www-form-urlencoded; charset=UTF-8"})
-	public String createComment(Model model, @PathVariable("idproduct")int idproduct,
+	public String createComment(Model model, @PathVariable("idproduct")String idproduct,
 			@ModelAttribute CommentDto cm, Principal principal, HttpServletRequest request){
 		Product product= productService.findOne(idproduct);
 		String username=principal.getName();

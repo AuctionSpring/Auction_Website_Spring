@@ -25,7 +25,7 @@ public class CartPageController {
 	@Autowired
 	CartItemService cartItemService;
 	@RequestMapping(value="/cart")
-	public String cartPage(@RequestParam("idproduct")int idproduct,Model model,HttpSession session){
+	public String cartPage(@RequestParam("idproduct")String idproduct,Model model,HttpSession session){
 		Product product=productservice.findOne(idproduct);
 		if(session.getAttribute("cart")==null){
 			List<CartItem> cartItem= new ArrayList<>();
@@ -48,7 +48,7 @@ public class CartPageController {
 		return "cart";
 	}
 	
-	private int isExist(int idproduct,HttpSession session){
+	private int isExist(String idproduct,HttpSession session){
 		@SuppressWarnings("unchecked")
 		List<CartItem> items= (List<CartItem>) session.getAttribute("cart");
 		for(int i=0;i<items.size();i++){
@@ -59,7 +59,7 @@ public class CartPageController {
 		return -1;
 	}
 	@RequestMapping(value="/removeCart")
-	public String removeItems(HttpSession session,@RequestParam("idproduct")int idproduct){
+	public String removeItems(HttpSession session,@RequestParam("idproduct")String idproduct){
 		@SuppressWarnings("unchecked")
 		List<CartItem> cartItems= (List<CartItem>) session.getAttribute("cart");
 		int index= isExist(idproduct, session);

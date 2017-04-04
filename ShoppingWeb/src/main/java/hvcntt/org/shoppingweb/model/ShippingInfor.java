@@ -1,5 +1,7 @@
 package hvcntt.org.shoppingweb.model;
 
+import java.util.UUID;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,7 +15,7 @@ import javax.persistence.Table;
 public class ShippingInfor {
 	@Id
 	@GeneratedValue
-	private int idshippinginfor;
+	private String idshippinginfor=UUID.randomUUID().toString();
 	@Column(name="streetname")
 	private String streetname;
 	@Column(name="housenumber")
@@ -37,10 +39,11 @@ public class ShippingInfor {
 		this.user=user;
 	}
 
-	public int getIdshippinginfor() {
+	
+	public String getIdshippinginfor() {
 		return idshippinginfor;
 	}
-	public void setIdshippinginfor(int idshippinginfor) {
+	public void setIdshippinginfor(String idshippinginfor) {
 		this.idshippinginfor = idshippinginfor;
 	}
 	public String getStreetname() {

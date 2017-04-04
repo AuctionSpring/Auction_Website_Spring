@@ -1,6 +1,7 @@
 package hvcntt.org.shoppingweb.model;
 
 import java.util.Date;
+import java.util.UUID;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -15,7 +16,7 @@ import javax.persistence.Table;
 public class Comment {
 	@Id
 	@Column(name="idcomment")
-	private int idcomment;
+	private String idcomment=UUID.randomUUID().toString();
 	@Column(name="content_comment")
 	private String content;
 	@Column(name="title_comment")
@@ -43,10 +44,11 @@ public class Comment {
 		this.product = product;
 		this.user = user;
 	}
-	public int getIdcomment() {
+	
+	public String getIdcomment() {
 		return idcomment;
 	}
-	public void setIdcomment(int idcomment) {
+	public void setIdcomment(String idcomment) {
 		this.idcomment = idcomment;
 	}
 	public String getContent() {

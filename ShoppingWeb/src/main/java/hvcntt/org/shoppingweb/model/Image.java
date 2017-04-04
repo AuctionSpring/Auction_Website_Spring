@@ -1,5 +1,7 @@
 package hvcntt.org.shoppingweb.model;
 
+import java.util.UUID;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,7 +15,7 @@ import javax.persistence.Table;
 public class Image {
 	@Id
 	@GeneratedValue
-	private int idimage;
+	private String idimage=UUID.randomUUID().toString();
 	@Column(name="title")
 	private String title;
 	@Column(name="link_image")
@@ -31,10 +33,11 @@ public class Image {
 		this.link_image = link_image;
 		this.product = product;
 	}
-	public int getIdimage() {
+
+	public String getIdimage() {
 		return idimage;
 	}
-	public void setIdimage(int idimage) {
+	public void setIdimage(String idimage) {
 		this.idimage = idimage;
 	}
 	public String getTitle() {

@@ -17,7 +17,7 @@ public class ProductServiceImp implements ProductService{
 		return productrepo.findAll();
 	}
 	@Override
-	public Product findOne(int idproduct) {
+	public Product findOne(String idproduct) {
 		// TODO Auto-generated method stub
 		return productrepo.findOne(idproduct);
 	}
@@ -27,7 +27,7 @@ public class ProductServiceImp implements ProductService{
 		return productrepo.findByNameContaining(name);
 	}
 	@Override
-	public void updateView(int idproduct) {
+	public void updateView(String idproduct) {
 		// TODO Auto-generated method stub
 		 productrepo.updateView(idproduct);
 	}

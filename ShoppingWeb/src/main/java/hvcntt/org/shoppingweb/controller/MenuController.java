@@ -15,7 +15,7 @@ public class MenuController {
 	@Autowired
 	CategoryService categoryservice;
 	@RequestMapping(value="/category")
-	public String findByCategory(@RequestParam("idcategory")int idcategory,Model model){
+	public String findByCategory(@RequestParam("idcategory")String idcategory,Model model){
 		Category category=categoryservice.findOne(idcategory);
 		model.addAttribute("listProduct", category);
 		model.addAttribute("message","có "+ category.getListProduct().size()+" sản phẩm được tìm thấy");

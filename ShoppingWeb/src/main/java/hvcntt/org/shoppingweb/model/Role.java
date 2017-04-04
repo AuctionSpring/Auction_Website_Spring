@@ -1,6 +1,7 @@
 package hvcntt.org.shoppingweb.model;
 
 import java.util.Set;
+import java.util.UUID;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -11,7 +12,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name="role")
 public class Role {
-	private Long idrole;
+	private String idrole=UUID.randomUUID().toString();
 	private String name;
 	private Set<User> users;
 	
@@ -21,12 +22,15 @@ public class Role {
 	public String getName() {
 		return name;
 	}
-	public Long getIdrole() {
+	
+	public String getIdrole() {
 		return idrole;
 	}
-	public void setIdrole(Long idrole) {
+
+	public void setIdrole(String idrole) {
 		this.idrole = idrole;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}

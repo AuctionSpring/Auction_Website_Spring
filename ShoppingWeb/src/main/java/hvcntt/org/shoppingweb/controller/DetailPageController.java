@@ -37,7 +37,7 @@ public class DetailPageController {
 	ProductService productService;
 	
 	@RequestMapping(value="/detail",method=RequestMethod.GET)
-	public String detailPage(Model model,@RequestParam("idproduct") int idproduct,Principal principal){
+	public String detailPage(Model model,@RequestParam("idproduct") String idproduct,Principal principal){
 		Product product= productservice.findOne(idproduct);
 		if(existId(idproduct)){
 			productservice.updateView(idproduct);
@@ -48,7 +48,7 @@ public class DetailPageController {
 		model.addAttribute("singleProduct", product);
 		return "detailpage";
 	}
-	private boolean existId(int idproduct){
+	private boolean existId(String idproduct){
 		List<Product> listP= productservice.getAll();
 		for(int i=0;i<listP.size();i++){
 			if(listP.get(i).getIdproduct()==idproduct){

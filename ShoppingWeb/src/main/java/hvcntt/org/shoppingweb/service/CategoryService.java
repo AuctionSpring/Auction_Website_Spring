@@ -6,6 +6,6 @@ import hvcntt.org.shoppingweb.model.Category;
 
 public interface CategoryService {
 	public List<Category> getAll();
-	Category findOne(int idcategory);
+	Category findOne(String idcategory);
 	List<Category> getCategoryParent();
 }

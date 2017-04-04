@@ -17,7 +17,7 @@ public class CategoryImp implements CategoryService{
 		return categoryrepo.findAll();
 	}
 	@Override
-	public Category findOne(int idcategory) {
+	public Category findOne(String idcategory) {
 		// TODO Auto-generated method stub
 		return categoryrepo.findOne(idcategory);
 	}

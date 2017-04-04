@@ -2,6 +2,7 @@ package hvcntt.org.shoppingweb.model;
 
 import java.util.List;
 import java.util.Set;
+import java.util.UUID;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -19,7 +20,7 @@ import javax.persistence.Table;
 public class Category {
 	@Id
 	@GeneratedValue
-	private int idcategory;
+	private String idcategory=UUID.randomUUID().toString();
 	@Column(name="name")
 	private String name;
 	/*@Column(name="parent_id")
@@ -41,10 +42,11 @@ public class Category {
 //		this.parent_id = parent_id;
 		this.listProduct=listProduct;
 	}
-	public int getIdcategory() {
+
+	public String getIdcategory() {
 		return idcategory;
 	}
-	public void setIdcategory(int idcategory) {
+	public void setIdcategory(String idcategory) {
 		this.idcategory = idcategory;
 	}
 	public String getName() {

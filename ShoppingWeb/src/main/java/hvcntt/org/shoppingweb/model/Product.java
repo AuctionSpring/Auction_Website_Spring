@@ -1,6 +1,7 @@
 package hvcntt.org.shoppingweb.model;
 
 import java.util.Set;
+import java.util.UUID;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -18,7 +19,7 @@ import javax.persistence.Table;
 public class Product {
 	@Id
 	@GeneratedValue
-	private int idproduct;
+	private String idproduct=UUID.randomUUID().toString();
 	@Column(name="image")
 	private String image;
 	@Column(name="name")
@@ -63,10 +64,11 @@ public class Product {
 		this.commentItems=commentItems;
 		this.payments=payments;
 	}
-	public int getIdproduct() {
+	
+	public String getIdproduct() {
 		return idproduct;
 	}
-	public void setIdproduct(int idproduct) {
+	public void setIdproduct(String idproduct) {
 		this.idproduct = idproduct;
 	}
 	public String getImage() {

@@ -6,7 +6,7 @@ import hvcntt.org.shoppingweb.model.Product;
 
 public interface ProductService {
 	public List<Product> getAll();
-	public Product findOne(int idproduct);
+	public Product findOne(String idproduct);
 	public List<Product> findByNameContaining(String name);
-	public void updateView(int idproduct);
+	public void updateView(String idproduct);
 }

@@ -29,7 +29,7 @@ public class UserServiceImp implements UserService{
 		Set<Role> roles = new HashSet<Role>(roleRepository.findAll());
 		Set<Role> roleUser=new HashSet<Role>();
 		for (Role role:roles){
-			if(2==role.getIdrole()){
+			if("2"==role.getIdrole()){
 				roleUser.add(role);
 				break;
 			}
@@ -51,7 +51,7 @@ public class UserServiceImp implements UserService{
 	}
 
 	@Override
-	public User findOne(Long id) {
+	public User findOne(String id) {
 		// TODO Auto-generated method stub
 		return userRepository.findOne(id);
 	}

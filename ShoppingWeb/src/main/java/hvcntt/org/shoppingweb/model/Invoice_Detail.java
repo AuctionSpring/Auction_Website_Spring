@@ -1,6 +1,7 @@
 package hvcntt.org.shoppingweb.model;
 
 import java.util.Date;
+import java.util.UUID;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -15,7 +16,7 @@ import javax.persistence.Table;
 public class Invoice_Detail {
 	@Id
 	@GeneratedValue
-	private int idinvoicedetail;
+	private String idinvoicedetail=UUID.randomUUID().toString();
 	@Column(name="totalprice")
 	private double totalprice;
 	@Column(name="quantity")
@@ -43,10 +44,11 @@ public class Invoice_Detail {
 		this.product = product;
 	}
 
-	public int getIdinvoicedetail() {
+
+	public String getIdinvoicedetail() {
 		return idinvoicedetail;
 	}
-	public void setIdinvoicedetail(int idinvoicedetail) {
+	public void setIdinvoicedetail(String idinvoicedetail) {
 		this.idinvoicedetail = idinvoicedetail;
 	}
 	public double getTotalprice() {

@@ -13,7 +13,7 @@ import org.springframework.data.jpa.repository.Query;
 
 import hvcntt.org.shoppingweb.model.Category;
 
-public interface CategoryRepository extends JpaRepository<Category, Integer> {
+public interface CategoryRepository extends JpaRepository<Category, String> {
 	@Query("Select c from Category c where c.category = null")
 	List<Category> findByCategory();
 	
