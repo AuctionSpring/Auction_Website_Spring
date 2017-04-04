@@ -4,7 +4,7 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-//import javax.persistence.GeneratedValue;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -14,7 +14,7 @@ import javax.persistence.Table;
 @Table(name="comment")
 public class Comment {
 	@Id
-	@Column(name="idcomment")
+	@GeneratedValue
 	private int idcomment;
 	@Column(name="content_comment")
 	private String content;

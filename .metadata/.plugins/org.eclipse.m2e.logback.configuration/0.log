@@ -25458,3 +25458,7 @@ Caused by: org.eclipse.core.runtime.CoreException: One or more constraints have 
 2017-04-04 19:05:05,604 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
 2017-04-04 19:05:05,607 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2017-04-04 19:05:05,612 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Web Personal\ShoppingWeb\src\test\resources
+2017-04-04 20:08:54,657 [Worker-89] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-04 20:08:55,125 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2017-04-04 20:08:55,210 [Worker-89] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-04 20:08:55,223 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Web Personal\ShoppingWeb\src\test\resources
