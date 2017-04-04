@@ -1,7 +1,7 @@
 package hvcntt.org.shoppingweb.service;
 
-import hvcntt.org.shoppingweb.model.AddresShipping;
+import hvcntt.org.shoppingweb.model.ShippingInfor;
 
 public interface AddressShipService {
-	AddresShipping create(AddresShipping address);
+	ShippingInfor create(ShippingInfor address);
 }

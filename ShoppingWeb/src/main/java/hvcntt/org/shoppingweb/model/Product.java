@@ -41,7 +41,7 @@ public class Product {
 	@OneToMany(cascade=CascadeType.ALL,fetch=FetchType.EAGER,mappedBy="product")
 	Set<Comment> commentItems;
 	@OneToMany(cascade=CascadeType.ALL,fetch=FetchType.EAGER,mappedBy="product")
-	Set<PayMent> payments;
+	Set<Invoice_Detail> payments;
 	@ManyToOne
 	@JoinColumn(name="idcategory")
 	Category category;
@@ -49,7 +49,7 @@ public class Product {
 		// TODO Auto-generated constructor stub
 	}
 	public Product(String image, String name, int view, float price, String description, int quantity,
-			int quantity_sold,Set<CartItem> cartitem,Set<Image> imageItem,Set<Comment> commentItems,Set<PayMent> payments) {
+			int quantity_sold,Set<CartItem> cartitem,Set<Image> imageItem,Set<Comment> commentItems,Set<Invoice_Detail> payments) {
 		super();
 		this.image = image;
 		this.name = name;
@@ -133,10 +133,10 @@ public class Product {
 		this.commentItems = commentItems;
 	}
 	
-	public Set<PayMent> getPayments() {
+	public Set<Invoice_Detail> getPayments() {
 		return payments;
 	}
-	public void setPayments(Set<PayMent> payments) {
+	public void setPayments(Set<Invoice_Detail> payments) {
 		this.payments = payments;
 	}
 	public Category getCategory() {

@@ -29,7 +29,7 @@ public class UserServiceImp implements UserService{
 		Set<Role> roles = new HashSet<Role>(roleRepository.findAll());
 		Set<Role> roleUser=new HashSet<Role>();
 		for (Role role:roles){
-			if(2==role.getId()){
+			if(2==role.getIdrole()){
 				roleUser.add(role);
 				break;
 			}

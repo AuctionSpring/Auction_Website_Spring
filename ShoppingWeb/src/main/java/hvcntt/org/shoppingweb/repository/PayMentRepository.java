@@ -2,8 +2,8 @@ package hvcntt.org.shoppingweb.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import hvcntt.org.shoppingweb.model.PayMent;
+import hvcntt.org.shoppingweb.model.Invoice_Detail;
 
-public interface PayMentRepository extends JpaRepository<PayMent, Integer> {
+public interface PayMentRepository extends JpaRepository<Invoice_Detail, Integer> {
 
 }

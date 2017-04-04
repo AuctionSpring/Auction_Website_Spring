@@ -16,20 +16,20 @@ public class Comment {
 	@Id
 	@GeneratedValue
 	private int idcomment;
-	@Column(name="content")
+	@Column(name="content_comment")
 	private String content;
-	@Column(name="title")
+	@Column(name="title_comment")
 	private String title;
 	@Column(name="createdate")
 	private Date createdate;
-	@Column(name="lastupdate")
+	@Column(name="lastupdate_date")
 	private Date lastupdate;
 	
 	@ManyToOne
 	@JoinColumn(name="idproduct")
 	Product product;
 	@ManyToOne
-	@JoinColumn(name="iduser")
+	@JoinColumn(name="username")
 	User user;
 	public Comment() {
 		// TODO Auto-generated constructor stub

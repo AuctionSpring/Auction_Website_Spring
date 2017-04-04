@@ -1,7 +1,7 @@
 package hvcntt.org.shoppingweb.service;
 
-import hvcntt.org.shoppingweb.model.PayMent;
+import hvcntt.org.shoppingweb.model.Invoice_Detail;
 
 public interface PayMentService {
-	PayMent create(PayMent payMent);
+	Invoice_Detail create(Invoice_Detail payMent);
 }

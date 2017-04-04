@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="hvcntt.org.shoppingweb.model.AddresShipping"/>
-<fullyQualifiedTypeName name="hvcntt.org.shoppingweb.model.CartItem"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="hvcntt.org.shoppingweb.service.UserService"/>
@@ -60,4 +58,6 @@
 <fullyQualifiedTypeName name="hvcntt.org.shoppingweb.model.UploadFile"/>
 <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
 <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.Query"/>
+<fullyQualifiedTypeName name="java.lang.Enum"/>
+<fullyQualifiedTypeName name="hvcntt.org.shoppingweb.validator.EnumDemo"/>
 </qualifiedTypeNameHistroy>

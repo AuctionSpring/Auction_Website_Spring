@@ -9,15 +9,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import hvcntt.org.shoppingweb.model.User;
-import hvcntt.org.shoppingweb.service.InformationService;
+//import hvcntt.org.shoppingweb.service.InformationService;
 import hvcntt.org.shoppingweb.service.SecurityService;
 import hvcntt.org.shoppingweb.service.UserService;
 import hvcntt.org.shoppingweb.validator.UserValidator;
 
 @Controller
 public class UserController {
-	@Autowired
-	InformationService customerservice;
+//	@Autowired
+//	InformationService customerservice;
 	@Autowired
 	UserService userService;
 	@Autowired
